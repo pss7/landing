@@ -11,7 +11,6 @@ main .titleBox h1{margin-bottom: 15px; text-align: center; font-size: 34px; colo
 main .titleBox p{text-align: center; font-size: 26px; color: #273750; font-family: 'Cafe24Shiningstar';}
 main .titleBox .box{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -80%);}
 main .linkList{display: flex; justify-content: center; gap: 0 150px;}
-main .linkList li{flex: 1;}
 main .linkList li .box{display: flex; flex-direction: column;}
 main .linkList li .box .linkBox{ display: flex; align-items: center; height: 37px; margin-bottom: 15px;}
 main .linkList li .box .imgBox{margin: 0 auto; width: 250px; height: 250px; margin-bottom: 28px;}
