@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+#wrap{height: 100vh; display: flex; flex-direction: column; overflow: hidden;}
+.container{max-width: 1490px; margin: 0 auto; padding: 0 20px;}
+
+main{display: flex; flex-direction: column; align-items: center; flex: 1; padding-bottom: 73px;}
+main .linkListBox{flex: 1;}
+main .titleBox{position: relative; flex: 1; width: 100%; padding: 50px 20px 0; margin-bottom: -130px; background: url(../images/main/main_bg.jpg)no-repeat center 20px; background-size: cover; font-family: 'GmarketSans'; background-color: #daeff7;}
+main .titleBox span{display: block; margin-bottom: 15px; text-align: center; font-size: 22px; color: #273750;}
+main .titleBox h1{margin-bottom: 15px; text-align: center; font-size: 34px; color: #273750; line-height: 1.4; word-break: keep-all;}
+main .titleBox p{text-align: center; font-size: 26px; color: #273750; font-family: 'Cafe24Shiningstar';}
+main .titleBox .box{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -80%);}
+main .linkList{display: flex; justify-content: center; gap: 0 150px;}
+main .linkList li{flex: 1;}
+main .linkList li .box{display: flex; flex-direction: column;}
+main .linkList li .box .linkBox{ display: flex; align-items: center; height: 37px; margin-bottom: 15px;}
+main .linkList li .box .imgBox{margin: 0 auto; width: 250px; height: 250px; margin-bottom: 28px;}
+main .linkList li .box .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+main .linkList li .box h2{position: relative; width: 100%; padding: 5px 10px;font-size: 18px; text-align: center; background-color: #2f89a1; border-radius: 50px; transition: all .5s;}
+main .linkList li .box h2::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 0; transition: all .5s; border-radius: 50px; background-color: #daeff7;} 
+main .linkList li .box h2 span::after{display: none; position: relative; top:2px; margin-left: 7px; content: ''; width: 19px; height: 18px; background: url(../images/main/arrow_icon01.png)no-repeat center; transition:all .5s; background-size: contain!important;}
+main .linkList li .box h2 strong{color: #fff; font-weight: 600; transition: all .5s;}
+main .linkList li .box h2 span{position: relative; color: #fff; font-weight:600; transition: all .5s;}
+main .linkList li .box p{ text-align: center; color: #33363a; font-weight: 600; word-break: keep-all;}
+main .linkList li .box .link{width: 100%; display: flex; gap: 0 10px;}
+main .linkList li .box .link li{flex: 1;}
+main .linkList li .box .link li a{position: relative; display: flex; justify-content: center; align-items: center; gap: 0 10px; text-align: center; background-color: #2f89a1; color: #fff; border-radius: 5px; z-index: 1; font-weight: 700; transition: all .5s;}
+
+main .linkList li .box .link li a::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 0; transition: all .5s; border-radius: 5px; background-color: #daeff7; z-index: -1;}
+footer{padding: 30px 0; background-color: #fafcff;}
+footer span{display: block; margin-bottom: 10px; font-weight: 700; font-size: 18px;}
+footer .infoList li{ font-weight: 600;}
+footer .infoList li strong{color: #ff4e4e;}
+
+@media (min-width: 1200px) {
+
+  main .linkList li .box .linkBox:hover h2{background-color: #daeff7;}
+  main .linkList li .box .linkBox:hover h2::before{width: 100%;}
+  main .linkList li .box .linkBox:hover h2 strong,
+  main .linkList li .box .linkBox:hover h2 span{color: #273750; font-weight: 700;}
+  main .linkList li .box:hover h2 span::before{width: 100%;}
+  main .linkList li .box .link li a:hover{background-color: #daeff7; color: #273750;}
+  main .linkList li .box .link li a:hover::before{width: 100%;}
+
+}
+
+@media (max-width: 1199px){
+
+  #wrap{height: auto;}
+  main{background-color: #daeff7;}
+  main .titleBox{padding: 50px 20px 100px; margin-bottom: -50px;}
+  main .titleBox span{font-size: 20px;}
+  main .titleBox h1{font-size: 30px;}
+  main .titleBox p{font-size: 20px;}
+  main .titleBox .box{position: static; transform: none;}
+  main .linkList li .box .imgBox{width: 200px; height: 200px;}
+  main .linkListBox{width: 100%;}
+  main .linkList{ gap: 0 80px; justify-content: space-between;}
+
+
+}
+
+@media (max-width: 1024px){
+
+  main .titleBox span{font-size: 18px;}
+  main .titleBox h1{font-size: 26px;}
+  main .titleBox p{font-size: 18px;}
+  main .linkList li .box .imgBox{width: 170px; height: 170px;}
+  main .linkList{flex-wrap: wrap; gap: 80px 10%;}
+  main .linkList li{width: 45%; flex: 1 1 auto;}
+  main .linkList li .box .link li a{padding: 5px 10px;}
+  main .linkList li .box h2{border-radius: 5px;}
+
+}
+
+@media (max-width: 767px){
+
+ main .linkList li .box .imgBox{width: 170px; height: 170px;  margin-bottom: 20px;}
+ main .linkList li .box h2{font-size: 16px;}
+ footer{padding: 30px 0;}
+ footer span{font-size: 16px;}
+ footer .infoList li{font-size: 14px;}
+
+}
+
+@media (max-width: 576px){
+
+  main .linkList li{width: 100%;}
+  main .titleBox{background-position-x: calc(50% - 143px);}
+
+}
+
+
+@media (max-width: 414px){
+
+  main .linkList li .box .imgBox{width: 150px; height: 150px;  margin-bottom: 15px;}
+  main .titleBox span{font-size: 16px;}
+  main .titleBox h1{font-size: 24px;}
+  main .titleBox p{font-size: 16px;}
+  main .titleBox{background-position-x: calc(50% - 180px);}
+
+}
+
+@media (max-width: 360px){
+
+  main .titleBox span{font-size: 14px;}
+  main .titleBox h1{font-size: 20px;}
+  main .titleBox p{font-size: 14px;}
+  main .titleBox{background-position-x: calc(50% - 180px);}
+  main .linkList li .box p{font-size: 14px;}
+  main .linkList li .box h2{font-size: 14px;}
+
+}
