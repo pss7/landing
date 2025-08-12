@@ -8,4 +8,12 @@ $(function () {
     });
   });
 
+  //모달
+  $('main .parentsBtn').click(function () {
+    $('.modalWrap').addClass('active');
+  });
+  $('.modalCloseBtn').click(function () {
+    $('.modalWrap').removeClass('active');
+  });
+
 });
