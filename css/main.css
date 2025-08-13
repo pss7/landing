@@ -44,7 +44,7 @@ footer .infoList li strong{color: #ff4e4e;}
 footer .layoutBox{display: flex; justify-content: space-between;}
 footer .box{flex-shrink: 0;}
 footer .logoBox{display: flex; gap: 0 5px;}
-footer .logoBox img{display: block; width: 110px; object-fit: contain;}
+footer .logoBox img{display: block; width: 150px; object-fit: contain;}
 
 @media (min-width: 1200px) {
 
@@ -106,8 +106,10 @@ footer .logoBox img{display: block; width: 110px; object-fit: contain;}
   main .linkList li{width: 100%;}
   main .titleBox{background-position-x: calc(50% - 143px);}
 
-}
+  footer .layoutBox{gap: 40px 0;}
+  footer .logoBox{flex-direction: column; align-items: center; gap: 30px 0;}
 
+}
 
 @media (max-width: 414px){
 
@@ -118,8 +120,6 @@ footer .logoBox img{display: block; width: 110px; object-fit: contain;}
   main .titleBox{background-position-x: calc(50% - 180px);}
  .modalWrap .modalBox{padding: 40px 30px 15px;}
  .modalWrap .modalBox .title{font-size: 18px;}
-
-  footer .logoBox{flex-direction: column; align-items: center; gap: 40px 0;}
 
 }
 
