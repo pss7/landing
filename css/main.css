@@ -44,6 +44,7 @@ footer .infoList li strong{color: #ff4e4e;}
 footer .layoutBox{display: flex; justify-content: space-between;}
 footer .box{flex-shrink: 0;}
 footer .logoBox{display: flex; gap: 0 5px;}
+footer .logoBox .logo03{width: 200px;}
 footer .logoBox img{display: block; width: 150px; object-fit: contain;}
 
 @media (min-width: 1200px) {
@@ -70,6 +71,10 @@ footer .logoBox img{display: block; width: 150px; object-fit: contain;}
   main .linkList li .box .imgBox{width: 200px; height: 200px;}
   main .linkListBox{width: 100%;}
   main .linkList{ gap: 0 80px; justify-content: space-between;}
+
+  footer .logoBox .logo03{width: 160px;}
+  footer .logoBox{gap: 0;}
+  footer .logoBox img{width: 110px; }
 
 
 }
@@ -106,7 +111,7 @@ footer .logoBox img{display: block; width: 150px; object-fit: contain;}
   main .linkList li{width: 100%;}
   main .titleBox{background-position-x: calc(50% - 143px);}
 
-  footer .layoutBox{gap: 40px 0;}
+  footer .layoutBox{gap: 30px 0;}
   footer .logoBox{flex-direction: column; align-items: center; gap: 30px 0;}
 
 }
